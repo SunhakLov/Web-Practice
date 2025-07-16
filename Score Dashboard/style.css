@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    src: url("fonts/CursedTimerUlil-Aznm.ttf");
+    font-family: CursedTimer ;
+}
+
+body{
+    font-family: CursedTimer, sans-serif;
+    background-color: #9CA3AF;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+    background-color: #1B244A;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    border-radius: 1rem ;
+    gap: 1rem;
+}
+.score-container{
+    display: flex;
+    gap: 10rem;
+    color: white;
+    text-align: center;
+}
+
+.container .reset{
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #9AABD8;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.container .reset:hover{
+    transform: scale(1.1);
+}
+
+.score-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-board h3{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+}
+
+.score-board h1{
+    font-size: 4rem;
+    background-color: black;
+    margin: 1.5rem 1rem;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    color: #F94F6D;
+    width: 100px;
+}
+
+.score-board .score-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.score-board .score-div .btn{
+    padding: .5rem .6rem;
+    background-color: transparent;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    transition: transform 0.2s ease;
+}
+
+.score-board .score-div .btn:hover{
+    transform: scale(1.2);
+}
