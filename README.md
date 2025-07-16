@@ -10,7 +10,8 @@ This are some of my project. I built from scratch as a project exercise from wha
 
 ## 📘 Project Demo
 
-- 1) Hometown Website : https://stalwart-strudel-78a45c.netlify.app
-  2) 
+  1) Hometown Website : https://stalwart-strudel-78a45c.netlify.app
+
+     
 Thank you for checking out my project!
 
