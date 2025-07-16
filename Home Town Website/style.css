@@ -1,0 +1,145 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+@import url(https://fonts.googleapis.com/css?family=Winky+Rough:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Winky Rough";
+}
+
+.hero-section {
+    height: 80vh;
+    background: url("images/battambang-view.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F1FAEE;
+    gap: 2rem;
+}
+
+.hero-section #visit-title {
+    background-color: #1D3557;
+    padding: 10px 20px;
+    border-radius: 1rem;
+}
+
+.hero-section #visit-text {
+    max-width: 40%;
+    background-color: #457B9D;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #1D3557;
+    background-color: #F1FAEE;
+    padding: 2rem 0 5rem;
+}
+
+.content .content-title {
+    padding: 2rem 0;
+}
+
+.content .activity-container {
+    display: flex;
+    padding: 2rem 0;
+    max-width: 80vw;
+    margin: auto;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.activity-container .activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 30%;
+    transition: transform 0.2s ease;
+}
+
+.activity-container .activity:hover{
+    transform: scale(1.2);
+}
+
+.activity-container .activity .img {
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.activity-container .activity #bamboo {
+    background-image: url("images/bamboo-train.jpg");
+}
+
+.activity-container .activity #museum {
+    background-image: url("images/museum.jpg");
+}
+
+.activity-container .activity #temple {
+    background-image: url("images/banan-temple.jpg");
+}
+
+.card-container{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+    margin: 5rem auto;
+    border-radius: 2rem;
+    background-color: #A8DADC;
+    box-shadow: 0 5px #1D3557;
+    color: #1D3557;
+    transition: transform 0.2s ease ;
+}
+
+.card-container:hover{
+    transform: scale(1.2);
+}
+
+.card-container .information-card{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.card-container .my-img{
+    background-image: url("/images/sunhak.jpg");
+    width: 180px;
+    height: 250px;
+    min-width: 180px;
+    background-size: cover;
+    border-radius: 2rem;
+}
+
+.card-container .infor-section{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-container .infor-section p {
+    font-style: italic;
+}
