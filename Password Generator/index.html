@@ -17,14 +17,26 @@
         <form action="" class="form">
             <div class="length-input">
                 <label for="length">Password Length : </label>
-                <input type="number" id="length" required>
+                <input type="number" id="length" placeholder="Enter Password Length" required>
             </div>
-            <button type="submit" onclick="generatePassword()" class="generatorBtn">Generator Password</button>
+
+            <div class="include-input">
+                <div class="number">
+                    <label for="number">Include number :</label>
+                    <input type="checkbox" id="number" class="custom-checkbox" required>
+                </div>
+                <div class="char">
+                    <label for="char">Include character :</label>
+                    <input type="checkbox" id="char" class="custom-checkbox" required>
+                </div>
+            </div>
+
+            <button type="submit" onclick="generatePassword(event)" class="generatorBtn">Generator Password</button>
         </form>
         <hr>
         <div class="password-option">
-            <p class="option1">hi</p>
-            <p class="option2">hi</p>
+            <p class="option1"></p>
+            <p class="option2"></p>
         </div>
     </div>
 
