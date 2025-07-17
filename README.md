@@ -10,8 +10,8 @@ This are some of my project. I built from scratch as a project exercise from wha
 
 ## 📘 Project Demo
 
-  1) Hometown Website : https://stalwart-strudel-78a45c.netlify.app
-  2) Score Tracking Dashboard : https://shiny-fenglisu-0c028d.netlify.app
+  1) Hometown Website : https://heroic-snickerdoodle-f21b78.netlify.app/
+  2) Score Tracking Dashboard : https://gentle-starlight-d70db3.netlify.app/
 
      
 Thank you for checking out my project!
