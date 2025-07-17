@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+    font-family: "Karla", sans-serif;
+}
+
+.container {
+    text-align: start;
+    color: aliceblue;
+    background-color: #1F2937;
+    padding: 4rem;
+    width: 40vw;
+    border-radius: 2rem;
+}
+
+.container .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.2rem;
+    margin-bottom: 3rem;
+}
+
+.container .title #generator-title {
+    width: 60%;
+}
+
+.container .title #generator-title span {
+    color: #5DEF92;
+}
+
+.container .title p {
+    font-weight: 200;
+}
+
+.container .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .form .length-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container .form .length-input input {
+    background-color: #273549;
+    border: none ;
+    box-shadow: 0 0 0 black;
+    padding: .3rem .5rem;
+    border-radius: 2rem;
+    transition: transform 0.2s ease;
+    margin-left: 0.5rem;
+    color: #FFFFFF;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container .form .length-input input:hover {
+    transform: scale(1.05);
+}
+
+.container .form .length-input input:focus {
+    outline: none;
+    border: none;
+}
+
+.container .form .generatorBtn {
+    background-color: #10B981;
+    padding: .5rem 1rem;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2rem;
+    transition: transform 0.2s ease;
+}
+
+.container .form .generatorBtn:hover {
+    transform: scale(1.1);
+}
+
+.container hr{
+    color: #2F3E53;
+    border: 1px solid #2F3E53;
+    border-radius: 1em;
+}
+
+.container .password-option{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .password-option p{
+    background-color: #2F3E53;
+    min-width: 40%;
+    text-align: center;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0;
+    color: #55F991;
+}
