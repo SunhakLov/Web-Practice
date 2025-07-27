@@ -1,5 +1,96 @@
-html, body {
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+html,
+body {
     margin: 0;
     padding: 0;
+    background-color: #C6C6C6;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 375px;
+}
+
+header {
+    width: 375px;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+header .profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+.post-card .post-profile {
+    padding-top: 1rem;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.post-card .post-profile .artist-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card .post-profile .artist-info p {
+    margin: 0;
+}
+
+.post-card .post-profile .artist-info .user-name {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.post-card .post-profile .artist-info .user-info {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+
+.post-image {
+    padding: 1rem 0;
+}
+
+.interact-container {
+    width: 375px;
+}
+
+.interaction-section {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-left: 1rem;
+}
+
+.likes, .comment {
+    padding-left: 1rem;
+    padding-top: .30rem;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.comment span{
+    font-weight: 700;
+}
+
+.comment {
+    padding-bottom: 1rem;
+}
