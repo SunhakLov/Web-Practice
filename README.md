@@ -14,6 +14,6 @@ This are some of my project. I built from scratch as a project exercise from wha
   2) Score Tracking Dashboard : https://gentle-starlight-d70db3.netlify.app/
   3) Password Generator : https://wondrous-manatee-ce9820.netlify.app/
   4) Unit Converter App : https://cheerful-llama-1c0e04.netlify.app/
-  5) Mobile Food Ordering App : 
+  5) Mobile Food Ordering App :    
 
 Thank you for checking out my project!
