@@ -1,3 +1,92 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Smythe:regular);
+
+*,
+*::before,
+*::after {
     margin: 0;
-} 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Smythe", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+.container {
+    width: 20%;
+    background-color: #FFFFFF;
+}
+
+header {
+    background-image: url(imgs/Header-bg.png);
+    background-size: cover;
+    color: white;
+    height: 110px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+header p {
+    font-size: 0.8rem;
+}
+
+header div {
+    padding: 1em;
+}
+
+.food-container {
+    margin: 0.5em 1.5em;
+    padding: 1.5em 0;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.food-container .food-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-container .food-cards .foot-description {
+    display: flex;
+    align-items: center;
+}
+
+.foot-description .icon p {
+    font-size: 3rem;
+}
+
+.food-container .food-cards .foot-description .description {
+    padding-left: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.description p {
+    font-size: 1.2rem;
+}
+
+.description .ingredients {
+    font-size: 0.8rem;
+    color: #8B8B8B;
+}
+
+.food-cards button{
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: 1px solid #8B8B8B;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
