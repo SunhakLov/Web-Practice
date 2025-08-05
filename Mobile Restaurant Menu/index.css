@@ -19,7 +19,10 @@ body {
 
 .container {
     width: 20%;
+    height: 70vh;
     background-color: #FFFFFF;
+    overflow: scroll;
+    position: relative;
 }
 
 header {
@@ -43,15 +46,16 @@ header div {
 }
 
 .food-container {
-    margin: 0.5em 1.5em;
-    padding: 1.5em 0;
-    border-bottom: 1px solid #D2D2D2;
+    margin: 2em 1.5em;
 }
 
 .food-container .food-cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #D2D2D2;
 }
 
 .food-container .food-cards .foot-description {
@@ -79,14 +83,137 @@ header div {
     color: #8B8B8B;
 }
 
-.food-cards button{
+.food-cards button {
     width: 30px;
     height: 30px;
     background-color: #FFFFFF;
     border-radius: 50%;
     border: 1px solid #8B8B8B;
-    font-size: 1rem;
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.food-cards button:hover {
+    transform: scale(1.2);
+}
+
+.food-cards button:active {
+    transform: scale(1);
+}
+
+.checkout-summary {
+    margin: 2em 1.5em;
+}
+
+.checkout-summary h3 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-weight: 400;
+}
+
+.checkout-summary .food-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.food-info {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.food-info button {
+    color: #BBBBBB;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.food-info button:hover {
+    transform: scale(1.1);
+}
+
+.food-info button:active {
+    transform: scale(1);
+}
+
+.checkout-summary hr {
+    margin: 1em 0 0.5em;
+}
+
+.total-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.Btn {
+    width: 100%;
+    background-color: #16DB99;
+    color: white;
+    font-weight: 700;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.Btn:hover {
+    transform: scale(1.05);
+}
+
+.Btn:active {
+    transform: scale(1);
+}
+
+.payment-detail {
+    /* display: none; */
+
+    width: 85%;
+    height: 300px;
+    position: absolute;
+    background-color: #8B8B8B;
+    right: 0;
+    left: 0;
+    bottom: 0 ;
+    top: 0;
+    margin: auto;
+}
+
+.none{
+    display: none;
+}
+
+.payment-detail h4 {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: 1em 0;
+    font-weight: 600;
+}
+
+.payment-detail form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.payment-detail input {
+    padding: 1em;
+    width: 90%;
+    margin: auto;
+}
+
+.payment-detail button {
+    padding: 1em;
+    width: 90%;
+    margin: 2em auto;
 }
