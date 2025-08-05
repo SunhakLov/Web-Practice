@@ -19,7 +19,7 @@ body {
 
 .container {
     width: 400px;
-    height: 70vh;
+    height: 100vh;
     background-color: #FFFFFF;
     overflow: scroll;
     position: relative;
@@ -184,12 +184,12 @@ header div {
     background-color: #8B8B8B;
     right: 0;
     left: 0;
-    bottom: 0 ;
+    bottom: 0;
     top: 0;
     margin: auto;
 }
 
-.none{
+.none {
     display: none;
 }
 
