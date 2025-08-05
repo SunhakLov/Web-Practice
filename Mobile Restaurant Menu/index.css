@@ -25,6 +25,7 @@ body {
     position: relative;
 }
 
+
 header {
     background-image: url(imgs/Header-bg.png);
     background-size: cover;
@@ -93,7 +94,8 @@ header div {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1px;
+    font-weight: 100;
+    font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
@@ -181,12 +183,13 @@ header div {
     width: 85%;
     height: 300px;
     position: absolute;
-    background-color: #8B8B8B;
+    background-color: #FFFFFF;
     right: 0;
     left: 0;
     bottom: 0;
     top: 0;
     margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 200px 10px;
 }
 
 .none {
@@ -210,10 +213,29 @@ header div {
     padding: 1em;
     width: 90%;
     margin: auto;
+    color: #757575;
+    border: 1px solid #757575;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .payment-detail button {
     padding: 1em;
     width: 90%;
     margin: 2em auto;
+}
+
+.complete-message{
+    width: 80%;
+    margin-top: 3em;
+    text-align: center;
+    background-color: #ECFDF5;
+    color: #065F46;
+    padding: 1.5em 0;
+    margin: auto;
 }
