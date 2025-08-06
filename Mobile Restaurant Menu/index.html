@@ -18,36 +18,17 @@
         </header>
         <main>
             <section class="food-container">
-                <div class="food-cards">
-                    <div class="foot-description">
-                        <div class="icon">
-                            <p>🍕</p>
-                        </div>
-                        <div class="description">
-                            <p class="food">Pizza</p>
-                            <p class="ingredients">pepperoni, mushrom, mozarella</p>
-                            <p class="price">$14</p>
-                        </div>
-                    </div>
-                    <button>+</button>
-                </div>
+                <!--  -->
             </section>
-            <section class="checkout-summary">
+            <section class="checkout-summary none">
                 <h3>Your Order</h3>
                 <div class="product-summary">
-                    <div class="food-summary">
-                        <div class="food-info">
-                            <p>Pizza</p>
-                            <button>remove</button>
-                        </div>
-                        <p>$14</p>
-                    </div>
-
+                    <!--  -->
                 </div>
                 <hr>
                 <div class="total-price">
                     <p>Total Price : </p>
-                    <p class="total">26$</p>
+                    <p class="total"></p>
                 </div>
                 <button class="orderBtn Btn">Complete Order</button>
             </section>
@@ -60,12 +41,12 @@
                 <input type="number" placeholder="Enter Card Number" required class="card-number"
                     pattern="^(?:\d{4}[- ]?){3}\d{4}$">
                 <input type="number" placeholder="Enter CVV" required class="cvv-number" pattern="^\d{3,4}$">
-                <button class="payBtn Btn">Pay</button>
+                <button class="payBtn Btn" data-pay="pay">Pay</button>
             </form>
         </div>
 
         <div class="complete-message none">
-            <p>Thanks James! Your Order is on its way</p>
+            <p>Thanks <span class="userName"></span>! Your Order is on its way</p>
         </div>
     </div>
     <script src="./index.js" type="module"></script>
