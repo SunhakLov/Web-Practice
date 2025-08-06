@@ -18,8 +18,9 @@ body {
 }
 
 .container {
-    width: 400px;
+    width: 100vw;
     height: 100vh;
+
     background-color: #FFFFFF;
     overflow: scroll;
     position: relative;
@@ -230,7 +231,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 2em auto;
 }
 
-.complete-message{
+.complete-message {
     width: 80%;
     margin-top: 3em;
     text-align: center;
@@ -244,4 +245,14 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: 1em;
     width: 90%;
     color: #fff;
+}
+
+@media (min-width: 500px) {
+    .container {
+        width: 600px;
+        height: 90vh;
+        background-color: #FFFFFF;
+        overflow: scroll;
+        position: relative;
+    }
 }
