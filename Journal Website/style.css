@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    width: 100vw;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5em;
+}
+
+.head .icon-name {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+h1 {
+    ` font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.nav ul li {
+    list-style-type: none;
+}
+
+.nav ul {
+    font-weight: 600;
+    display: flex;
+    gap: 1em;
+}
+
+.intro-board {
+    position: relative;
+    background: url("images/intro.png");
+    background-color: black;
+    background-blend-mode: lighten;
+    color: white;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.intro-text {
+    width: 80%;
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    text-shadow: 0 0 10px black;
+    line-height: 1.5;
+}
