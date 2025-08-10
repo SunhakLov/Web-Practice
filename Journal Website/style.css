@@ -82,7 +82,7 @@ h1 {
 }
 
 .journal-container {
-    padding-top: 1em;
+    padding-top: 2em;
     width: 85%;
     margin: auto;
 }
@@ -141,7 +141,6 @@ h1 {
 
 .recent-post {
     text-align: center;
-    padding-top: 1.5em;
     font-weight: 700;
 }
 
