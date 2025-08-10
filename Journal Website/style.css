@@ -78,7 +78,7 @@ h1 {
 }
 
 .header-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .journal-container {
@@ -165,4 +165,39 @@ h1 {
 
 .heading-text {
     font-weight: 700;
+}
+
+
+
+@media (min-width: 850px) {
+    img {
+        max-width: 400px;
+    }
+
+    .journal-container {
+        display: grid;
+        gap: 1.5em;
+        grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+        max-width: 1245px;
+    }
+
+    .journal-card {
+        grid-column: span 4;
+        grid-row: span 3;
+        width: 100%;
+    }
+
+    .aboutme-container .more-about-me {
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-me {
+        display: flex;
+        max-width: 90%;
+        gap: 2em;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
 }
