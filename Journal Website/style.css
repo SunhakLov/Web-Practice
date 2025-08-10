@@ -88,7 +88,7 @@ h1 {
 }
 
 .journal-card {
-    padding-top: 2em;
+    padding-bottom: 1.5em;
     width: 100%;
 }
 
@@ -137,4 +137,33 @@ h1 {
 
 .copy-right {
     font-weight: 400;
+}
+
+.recent-post {
+    text-align: center;
+    padding-top: 1.5em;
+    font-weight: 700;
+}
+
+.about-me .greeting {
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: .5em 0;
+}
+
+.aboutme-container {
+    width: 90%;
+    margin: auto;
+}
+
+.more-about-me {
+    padding: 2.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.heading-text {
+    font-weight: 700;
 }
