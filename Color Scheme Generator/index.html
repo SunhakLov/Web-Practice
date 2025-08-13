@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <form>
+                <input type="color" value="#F55A5A" class="color-picker">
+                <select for="color-scheme" class="scheme-selector">
+                    <option value="Monochrome">Monochrome</option>
+                    <option value="Monochrome-dark">Monochrome-dark</option>
+                    <option value="Monochrome-light">Monochrome-light</option>
+                    <option value="Analogic">Analogic</option>
+                    <option value="Complement">Complement</option>
+                    <option value="Analogic-complement">Analogic-complement</option>
+                    <option value="Triad">Triad</option>
+                </select>
+                <button type="submit" class="submitBtn">Get Color Scheme</button>
+            </form>
+        </nav>
+        <main>
+            <div class="color-container">
+                <div class="color-1 color" style="background-color:#F55A5A"></div>
+                <p class="color-hex">#F55A5A</p>
+            </div>
+            <div class="color-container">
+                <div class="color-2 color" style="background-color:#2B283A"></div>
+                <p class="color-hex">#2B283A</p>
+            </div>
+            <div class="color-container">
+                <div class="color-3 color" style="background-color:#FBF3AB"></div>
+                <p class="color-hex">#FBF3AB</p>
+            </div>
+            <div class="color-container">
+                <div class="color-4 color" style="background-color:#AAD1B6"></div>
+                <p class="color-hex">#AAD1B6</p>
+            </div>
+            <div class="color-container">
+                <div class="color-5 color" style="background-color:#A626D3"></div>
+                <p class="color-hex">#A626D3</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
