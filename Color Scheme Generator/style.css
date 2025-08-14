@@ -8,7 +8,7 @@
 
 body {
     height: 100vh;
-    background-color: #1C1C1C;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,7 @@ body {
     background-color: #1F2937;
     height: 500px;
     width: 500px;
+    border-radius: 1em;
 }
 
 nav {
@@ -73,6 +74,10 @@ form {
     transform: scale(1.1);
 }
 
+.submitBtn:active {
+    transform: scale(1);
+}
+
 main {
     height: 410px;
     width: 100%;
@@ -90,6 +95,10 @@ main {
 
 .color-container:hover {
     transform: scale(1.05);
+}
+
+.color-container:active {
+    transform: scale(1);
 }
 
 .color-container .color-hex {
