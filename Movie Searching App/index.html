@@ -5,10 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Searching App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="container">
+        <nav>
+            <div class="nav-top">
+                <h1>Find your film</h1>
+                <button>My Watchlist</button>
+            </div>
+            <div class="nav-search">
+                <div class="dark-filter"></div>
+                <form action="">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="" id="" placeholder="Spider-Man II">
+                    </div>
+                    <button>Search</button>
+                </form>
+            </div>
+        </nav>
+        <main class="movie-dashboard">
+            <div class="movie-card">
+                <img src="df0b6ef9ddbc674841896e9c23ceb7df02ff2d85.png" alt="">
+                <div class="movie-info">
+                    <div class="title-row flex">
+                        <p class="movie-title">Blade Runner</p>
+                        <div class="rating-row">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="rating">8.1</p>
+                        </div>
+                    </div>
+                    <div class="meta-row flex">
+                        <p><span class="movie-lenght">116</span>min</p>
+                        <p class="movie-type">Action, Drama, Mystrey</p>
+                        <button class="watchlist">
+                            <i class="fa-regular fa-circle-plus"></i>
+                            <span>Watchlist</span>
+                        </button>
+                    </div>
+                    <div class="description-div">
+                        <p class="description">A blade runner must pursue and terminate four replicants who stole a ship
+                            in
+                            space, and have
+                            returned to Earth to find their creator</p>
+                    </div>
 
+                </div>
+            </div>
+
+        </main>
+    </div>
 </body>
 
 </html>
