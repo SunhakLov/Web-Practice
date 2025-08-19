@@ -233,7 +233,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .meta-row {
     justify-content: space-between;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 .description {
@@ -255,7 +255,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .title-row .movie-title {
     margin-right: 1em;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
 }
 
 .fa-star {
@@ -276,7 +276,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .add-to-list {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .none {
