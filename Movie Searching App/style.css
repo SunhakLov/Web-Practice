@@ -16,11 +16,11 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #121212;
+    /* background-color: #121212; */
 }
 
 .container {
-    width: 100%;
+    width: 440px;
     overflow: scroll;
     height: 100%;
     background-color: #121212;
@@ -65,12 +65,27 @@ nav::before {
     text-shadow: 0.1px 0.1px 0.1px black;
 }
 
-.nav-top button {
+.nav-top a {
     border: none;
     background-color: transparent;
     color: #fff;
     font-size: .8rem;
     font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.clickable:hover {
+    transform: scale(1.1);
+}
+
+.clickable:active {
+    transform: scale(1);
 }
 
 .nav-search {
@@ -98,6 +113,18 @@ form {
     height: 40px;
     background-color: transparent;
     font-family: inherit;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.nav-search form input:focus {
+    outline: none;
+    border: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
 }
 
 .search-bar {
@@ -105,6 +132,21 @@ form {
     align-items: center;
     flex: 1;
 }
+
+.icon-bg {
+    display: flex;
+    flex-direction: column;
+    color: #2E2E2F;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.icon-bg p {
+    font-size: 3rem;
+}
+
 
 .search-bar i {
     cursor: pointer;
