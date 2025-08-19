@@ -9,7 +9,7 @@ document.querySelector(".submit").addEventListener("click", (e) => {
 })
 
 async function render(movieTitle) {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=${APIkey}&s=${movieTitle}`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=${APIkey}&s=${movieTitle}`);
     const data = await response.json();
     console.log(data)
 
@@ -23,7 +23,7 @@ async function render(movieTitle) {
     }
 
     const detail = await Promise.all(data.Search.map(async (movie) => {
-        const movieDetail = await fetch(`http://www.omdbapi.com/?apikey=${APIkey}&i=${movie.imdbID}`)
+        const movieDetail = await fetch(`https://www.omdbapi.com/?apikey=${APIkey}&i=${movie.imdbID}`)
         return movieDetail.json()
     }))
 
