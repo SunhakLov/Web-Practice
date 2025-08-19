@@ -17,6 +17,6 @@ This are some of my project. I built from scratch as a project exercise from wha
   5) Mobile Food Ordering App : https://shimmering-centaur-c10d85.netlify.app
   6) Journal website : https://dulcet-puffpuff-01a6f8.netlify.app
   7) Color Scheme Generator : https://relaxed-stroopwafel-01c997.netlify.app
-  8) Movie Searching App : https://monumental-snickerdoodle-d0c9c1.netlify.app
+  8) Movie Searching App : https://heartfelt-douhua-ac8ece.netlify.app/?
 
 Thank you for checking out my project!
