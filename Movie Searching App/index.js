@@ -1,10 +1,8 @@
 import { APIkey } from "./config.js"
-console.log(APIkey)
-
 
 document.querySelector(".submit").addEventListener("click", (e) => {
     e.preventDefault();
-    const movieTitle = document.getElementById("movileTitle").value;
+    const movieTitle = document.getElementById("movieTitle").value;
     render(movieTitle);
 })
 
@@ -13,7 +11,7 @@ async function render(movieTitle) {
     const data = await response.json();
     console.log(data)
 
-    if (!data.Response || !data.Search) {
+    if (data.Response === "False" || !data.Search) {
         document.querySelector(".movie-dashboard").innerHTML = `
         <div class="notFound">
             <p>Unable to find what you’re looking for.</p>
@@ -60,4 +58,26 @@ async function render(movieTitle) {
     });
     document.querySelector(".movie-dashboard").innerHTML = movieList
 }
+
+document.querySelector(".movie-dashboard").addEventListener("click", (e) => {
+    const addBtn = e.target.closest(".watchlist")
+    if (!addBtn) return;
+    let selectedId = addBtn.dataset.movieid
+    addToWatchlist(selectedId);
+
+})
+
+
+function addToWatchlist(id) {
+    let watchlistMovie = JSON.parse(localStorage.getItem("watchlist")) || [];
+
+    if (!watchlistMovie.includes(id)) {
+        watchlistMovie.push(id)
+        console.log(`${id} has been added`)
+    };
+
+    localStorage.setItem("watchlist", JSON.stringify(watchlistMovie));
+}
+
+
 
