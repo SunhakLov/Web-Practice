@@ -76,7 +76,7 @@ function addToWatchlist(id) {
         document.querySelector(`[data-movieId = "${id}"]`).innerHTML = `added &#10003;`
         setTimeout(() => {
             document.querySelector(`[data-movieId = "${id}"]`).innerHTML = `
-            <i class="fa-regular fa-circle-plus"></i>
+            <i class="fa-regular fa-circle-check"></i>
             <span>Watchlist</span>
             `
         }, 1000)
