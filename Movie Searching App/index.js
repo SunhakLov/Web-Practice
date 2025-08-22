@@ -73,7 +73,11 @@ function addToWatchlist(id) {
 
     if (!watchlistMovie.includes(id)) {
         watchlistMovie.push(id)
-        console.log(`${id} has been added`)
+        document.querySelector(`[data-movieId = "${id}"]`).innerHTML = `added &#10003;`
+        setTimeout(() => {
+            document.querySelector(`[data-movieId = "${id}"]`).innerHTML = `Watchlist`
+        }, 1000)
+
     };
 
     localStorage.setItem("watchlist", JSON.stringify(watchlistMovie));
