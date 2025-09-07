@@ -1,0 +1,21 @@
+=> Todo
+
+Serve all the static files (HTML CSS JS)
+
+Update the frontend with live prices
+
+Log User Purchases to a text file
+
+
+=> Make a function that random price of gold
+
+=> Generate a PDF (NPM)
+=> Email a response (NPM)
+
+
+=> List of requriment
+HTTP FS Events & Path Modules
+Routing
+Serving static files and data
+Event Emitters
+Servers Sent Events`
