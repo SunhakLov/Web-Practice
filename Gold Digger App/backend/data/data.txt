@@ -1,0 +1,2 @@
+1758428806424, amount paid: £100.00, price per Oz: 3073.98
+1758428815435, amount paid: £200.00, price per Oz: 3058.08

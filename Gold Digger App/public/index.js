@@ -19,7 +19,7 @@ setInterval(() => {
 }, 3000)
 
 
-investBtn.addEventListener("click", (event) => {
+investBtn.addEventListener("click", async (event) => {
     event.preventDefault();
     const investAmount = parseFloat(investAmountHTML.value);
     investAmountHTML.value = ''
@@ -33,7 +33,20 @@ investBtn.addEventListener("click", (event) => {
     const timestamp = Date.now();
     const date = new Date(timestamp);
     const formartTimestamp = date.toUTCString();
+
+    await fetch('http://localhost:8000/save', {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            timestamp,
+            amount: investAmount.toFixed(2),
+            price: currentPrice.toFixed(2)
+        })
+    })
+
     console.log(formartTimestamp);
+
+
 })
 
 okaybtn.addEventListener("click", () => {
