@@ -5,7 +5,7 @@ import { sendResponse } from "./utils/sendResponse.js";
 import { serveStatic } from "./utils/serveStatic.js";
 import { writeData } from "./utils/writeData.js";
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename)
