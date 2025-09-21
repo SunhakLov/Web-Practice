@@ -18,5 +18,7 @@ This are some of my project. I built from scratch as a project exercise from wha
   6) Journal website : https://dulcet-puffpuff-01a6f8.netlify.app
   7) Color Scheme Generator : https://relaxed-stroopwafel-01c997.netlify.app
   8) Movie Searching App : https://heartfelt-douhua-ac8ece.netlify.app/?
+  9) GoldDigger App : https://web-practice-1.onrender.com
+  
 
 Thank you for checking out my project!

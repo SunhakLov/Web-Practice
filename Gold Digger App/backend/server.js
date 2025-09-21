@@ -4,6 +4,9 @@ import path from "path";
 import { sendResponse } from "./utils/sendResponse.js";
 import { serveStatic } from "./utils/serveStatic.js";
 import { writeData } from "./utils/writeData.js";
+import dotenv from 'dotenv'
+
+dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 
